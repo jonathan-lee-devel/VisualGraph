@@ -64,5 +64,13 @@ public abstract class Graph {
 	 * @return success flag for checking that the coloring is proper
 	 */
 	public abstract boolean isProperColoring(Coloring coloring);
+	
+	/**
+	 * Check if the given vertex parameter is adjacent to the adj parameter in the graph, i.e. does an edge exist between the two
+	 * @param vertex the vertex to be checked
+	 * @param adj the other vertex to be checked
+	 * @return whether or not the vertices are adjacent
+	 */
+	public abstract boolean isVertexAdjacent(Vertex vertex, Vertex adj);
 
 }

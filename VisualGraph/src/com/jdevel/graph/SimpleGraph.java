@@ -18,7 +18,7 @@ public class SimpleGraph extends Graph {
 	
 	public SimpleGraph() {
 		this.vertexSet = new HashSet<Vertex>();// HashSet prevents multiple instances of the same vertex
-		this.edgeSet = new HashSet<Edge>();// HashSet prevents multiple instances of the same edge, which would not be allowed
+		this.edgeSet = new HashSet<Edge>();// HashSet prevents multiple instances of the same edge
 		
 		this.coloring = new Coloring();
 	}
@@ -82,6 +82,21 @@ public class SimpleGraph extends Graph {
 	@Override
 	public boolean isProperColoring(Coloring coloring) {
 		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isVertexAdjacent(Vertex vertex, Vertex adj) {
+		// Iterates through the edge set of the graph, returns true if there is a match, i.e. the vertices are adjacent in the graph
+		Iterator<Edge> itr = this.edgeSet.iterator();
+		while (itr.hasNext()) {
+			Edge next = itr.next();
+			if (next.getKey().equals(vertex) && next.getValue().equals(adj))
+				return true;
+			if (next.getKey().equals(adj) && next.getValue().equals(vertex))
+				return true;
+		}
+		
 		return false;
 	}
 	
