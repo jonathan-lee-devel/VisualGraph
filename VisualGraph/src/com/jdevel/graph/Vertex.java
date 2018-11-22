@@ -2,7 +2,7 @@ package com.jdevel.graph;
 
 /**
  * Represents a vertex in a graph,
- * may or may not have a name
+ * must have a name
  */
 public class Vertex {
 
@@ -23,6 +23,8 @@ public class Vertex {
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
+		if (name == null || name.equals(""))
+			this.name = "INVALID_VERTEX_NAME";
 		this.name = name;
 	}
 		
