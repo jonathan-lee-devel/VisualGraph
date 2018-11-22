@@ -25,7 +25,8 @@ public class Vertex {
 	public void setName(String name) {
 		if (name == null || name.equals(""))
 			this.name = "INVALID_VERTEX_NAME";
-		this.name = name;
+		else
+			this.name = name;
 	}
 		
 }
