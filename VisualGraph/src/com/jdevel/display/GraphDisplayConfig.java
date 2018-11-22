@@ -9,7 +9,7 @@ public class GraphDisplayConfig {
 	private static final Dimension defaultDisplayDimension;
 	
 	static {
-		defaultDisplayDimension = new Dimension(1024, 768);
+		defaultDisplayDimension = new Dimension(400, 400);
 	}
 	
 	public static Dimension getDefaultDisplayDimension() {

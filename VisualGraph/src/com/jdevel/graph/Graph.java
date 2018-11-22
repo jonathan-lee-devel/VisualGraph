@@ -72,5 +72,13 @@ public abstract class Graph {
 	 * @return whether or not the vertices are adjacent
 	 */
 	public abstract boolean isVertexAdjacent(Vertex vertex, Vertex adj);
+	
+	public Set<Vertex> getVertexSet() {
+		return this.vertexSet;
+	}
+	
+	public Set<Edge> getEdgeSet() {
+		return this.edgeSet;
+	}
 
 }
