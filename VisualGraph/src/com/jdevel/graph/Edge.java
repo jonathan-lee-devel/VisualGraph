@@ -16,4 +16,19 @@ public class Edge extends Pair<Vertex, Vertex> {
 		super(vertex1, vertex2);
 	}
 	
+	/**
+	 * Checks if the edge is a loop, i.e. if it has the same vertex on both ends
+	 * @return whether or not the edge is a loop
+	 */
+	public boolean isLoop() {
+		
+		if (this.getKey() != null && this.getValue() != null) {// Checks for not null
+			if (this.getKey() == this.getValue()) {// Checks if the 2 ends are equal
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
 }

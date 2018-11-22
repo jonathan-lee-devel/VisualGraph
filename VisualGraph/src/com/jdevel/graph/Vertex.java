@@ -8,10 +8,6 @@ public class Vertex {
 
 	private String name;
 	
-	public Vertex() {
-		
-	}
-	
 	public Vertex(String name) {
 		this.setName(name);
 	}
