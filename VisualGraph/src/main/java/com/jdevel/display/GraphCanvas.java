@@ -61,33 +61,7 @@ public class GraphCanvas extends JPanel {
 			xOffset += spacing;
 			yOffset += spacing;
 		}
-
-//		g2.setColor(Color.MAGENTA);
-//		g2.drawOval(50, 50, config.getVertexDimension().width, config.getVertexDimension().height);
-//		g2.fillOval(50, 50, config.getVertexDimension().width, config.getVertexDimension().height);
-//		
-//		g2.drawOval(150, 150, config.getVertexDimension().width, config.getVertexDimension().height);
-//		g2.fillOval(150, 150, config.getVertexDimension().width, config.getVertexDimension().height);
-//		
-//		g2.drawOval(150, 50, config.getVertexDimension().width, config.getVertexDimension().height);
-//		g2.fillOval(150, 50, config.getVertexDimension().width, config.getVertexDimension().height);
-//		
-//		g2.setColor(Color.WHITE);
-//		g2.setFont(new Font("Helveteca", Font.BOLD, 15));
-//		g2.drawString("A", 65, 45);
-//		g2.drawString("B", 170, 145);
-//		g2.drawString("C", 165, 45);
-//		g2.drawString("Graph: G", 50, 200);
-//		g2.drawString("V = { A, B, C }", 50, 225);
-//		g2.drawString("E = { {A,B}, {A,C}, {B,C} }", 50, 250);
-//		
-//		g2.setColor(Color.CYAN);
-//		g2.drawLine(80, 65, 160, 150);
-//		g2.drawLine(80, 65, 150, 65);
-//		g2.drawLine(165, 155, 165, 80);
 		
-	}
-	
 	public void setGraph(Graph graph) {
 		
 	}
