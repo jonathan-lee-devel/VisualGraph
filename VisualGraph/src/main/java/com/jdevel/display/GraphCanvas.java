@@ -61,6 +61,7 @@ public class GraphCanvas extends JPanel {
 			xOffset += spacing;
 			yOffset += spacing;
 		}
+	}
 		
 	public void setGraph(Graph graph) {
 		
